@@ -1,10 +1,11 @@
-import {StatusBar} from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 import {
   View, 
   Image, 
   Text, 
   TextInput, 
-  StyleSheet 
+  StyleSheet,
+  TouchableOpacity 
 } from 'react-native';
 
 export default function App({ navigation }) {
