@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import { 
-    StyleSheet, 
-    Text, 
-    View, 
-    Image, 
-    TouchableOpacity, 
-    ImageBackground 
+  Image,
+  ImageBackground,
+  StyleSheet, 
+  Text, 
+  TouchableOpacity,
+  View
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import config from "../../config"
@@ -22,7 +22,9 @@ export default function App({ navigation, route}) {
       resizeMode='cover'
     >
       <View  style={styles.leftSpace}>
-        <TouchableOpacity onPress={() => navigation.goBack()} >
+        <TouchableOpacity 
+          onPress={() => navigation.goBack()} 
+        >
           <Image 
             style={styles.drawerIc} 
             source={require("../../../assets/arrowBack.png")} 
@@ -82,7 +84,6 @@ const styles = StyleSheet.create({
     width:"100%",
     height:"100%",
     paddingTop:40,
-
   },
   leftSpace: {
     marginBottom: 15,
