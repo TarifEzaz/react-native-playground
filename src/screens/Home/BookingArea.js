@@ -5,7 +5,7 @@ import {
     View 
 } from "react-native";
 
-export const BookingArea = () => {
+ const BookingArea = () => {
   return (
     <View style={styles.bookingContainer}>
       <View style={styles.bookingView}>
@@ -142,3 +142,5 @@ const styles = StyleSheet.create({
       fontSize: 14,
     }
   })
+
+  export default BookingArea;
