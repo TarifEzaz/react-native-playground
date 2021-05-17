@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
+import { 
+    Image,
+    StyleSheet,
+    Text,
+    TouchableOpacity
+} from "react-native";
 import config from "../../../config";
 
 const AmenitiesList = ({ item, onPress }) => {
@@ -7,9 +12,11 @@ const AmenitiesList = ({ item, onPress }) => {
     <TouchableOpacity onPress={onPress} style={styles.item}>
       <Image 
         resizeMode="contain"
-        source={{uri: `${config.baseUrl}/images/amenities/${item}.png`}}
+        source={
+          {uri: `${config.baseUrl}/images/amenities/${item}.png`}
+        }
         style={styles.image}
-        />
+      />
       <Text style={styles.label}>{item}</Text>
     </TouchableOpacity>
   )
