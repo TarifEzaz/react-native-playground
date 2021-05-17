@@ -1,3 +1,6 @@
+import {FlatList, StyleSheet } from "react-native";
+import {axios} from "axios";
+
 const DestinationsList = ({ navigation}) => {
     const [destinationsItems, setDestinationsItems] = useState([])
   
@@ -22,7 +25,9 @@ const DestinationsList = ({ navigation}) => {
         <DestinationsListItem
           key={item.id+''} 
           item={item}
-          onPress={() => navigation.navigate("Details", { item })}
+          onPress={
+            () => navigation.navigate("Details", { item })
+          }
         />
       ]
     }
