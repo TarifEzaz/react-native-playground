@@ -1,5 +1,9 @@
 import React from 'react';
-import {View, Image, StyleSheet } from 'react-native';
+import {
+    View, 
+    Image, 
+    StyleSheet 
+} from 'react-native';
 
 const Rating = ({rating}) => {
   const starFilled = 'https://reactnativemaster.com/wp-content/uploads/2020/09/starFiller.png';
@@ -8,7 +12,6 @@ const Rating = ({rating}) => {
 
   let ratingStars = []
   
-
   // add filled stars
   for (let i = 0; i < parseInt(rating); i++) {
     ratingStars.push(
@@ -36,8 +39,7 @@ const Rating = ({rating}) => {
         source={{ uri: starEMpty }}
         key= {new Date().getTime() + Math.random()+""}
 
-    />)
-    
+    />) 
   }
 
   return (
