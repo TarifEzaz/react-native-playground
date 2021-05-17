@@ -138,6 +138,7 @@ export default function App({ navigation }) {
       borderTopLeftRadius: 50,
       width:"100%",
       flex:1,
+      flexDirection: "column",
     },
     destinationsTxt:{
       fontFamily:"Rubik_500Medium",    
