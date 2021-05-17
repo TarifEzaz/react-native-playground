@@ -7,13 +7,13 @@ import {
   StyleSheet 
 } from 'react-native';
 
-export default function App({ navigation}) {
+export default function App({ navigation }) {
     const [searchQuery, setSearchQuery] = useState("")
 
     return (
       <View style={styles.container}>
         <StatusBar style="auto" />
-        <View  style={{width:"90%"}}>
+        <View style={{width:"90%"}}>
           <TouchableOpacity>
             <Image 
               style={styles.drawerIc} 
@@ -28,9 +28,11 @@ export default function App({ navigation}) {
               source={require("../../../assets/profileImg.png")} 
             />
             <View style={styles.headerInfo}>
-              <Text style={styles.headerWelcome}>Welcome</Text>
+              <Text style={styles.headerWelcome}>
+                Welcome
+              </Text>
               <Text style={styles.headerProfile}>
-                Youssef El Habchi
+                Shajia Annoor Joty
               </Text>
             </View>
           </View>
@@ -56,11 +58,15 @@ export default function App({ navigation}) {
           />
         </View>
         <View style={{width:"90%"}}>
-          <Text style={styles.discoverTxt}>Discover</Text>
+          <Text style={styles.discoverTxt}>
+            Discover
+          </Text>
         </View>
         <DiscoverList />
         <View style={styles.destinationsView}>
-          <Text style={styles.destinationsTxt}>Popular Destinations</Text>
+          <Text style={styles.destinationsTxt}>
+            Popular Destinations
+          </Text>
           <DestinationsList navigation={navigation} />
         </View>  
       </View>
