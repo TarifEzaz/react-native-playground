@@ -64,6 +64,7 @@ export default function App({ navigation, route}) {
         </View>   
       </ScrollView>
       <BookingArea />
+      <AmenitiesList />
     </ImageBackground>
   );
 }
