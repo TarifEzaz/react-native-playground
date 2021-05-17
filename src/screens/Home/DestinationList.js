@@ -1,7 +1,7 @@
-import {FlatList, StyleSheet } from "react-native";
-import {axios} from "axios";
+import { FlatList, StyleSheet } from "react-native";
+import { axios } from "axios";
 
-const DestinationsList = ({ navigation}) => {
+const DestinationsList = ({ navigation }) => {
     const [destinationsItems, setDestinationsItems] = useState([])
   
     useEffect(() => {
@@ -34,12 +34,12 @@ const DestinationsList = ({ navigation}) => {
   
     return (
       <FlatList
-          style={styles.container}
-          horizontal={true}
-          data={destinationsItems}
-          renderItem={renderItem}
-          showsHorizontalScrollIndicator={false}
-        />
+        style={styles.container}
+        horizontal={true}
+        data={destinationsItems}
+        renderItem={renderItem}
+        showsHorizontalScrollIndicator={false}
+      />
     )
   }
 
