@@ -1,12 +1,26 @@
-<View style={styles.bookingContainer}>
-        <View style={styles.bookingView}>
-          <Text style={styles.priceTxt}>{`$${item.price}/night`}</Text>
-          <TouchableOpacity style={styles.bookingBtn}>
-            <Text style={styles.bookingBtnTxt}>Request To Book</Text>
-          </TouchableOpacity>
-        </View>
-</View>
+import {  
+    Text, 
+    TouchableOpacity, 
+    StyleSheet,
+    View 
+} from "react-native";
 
+export const BookingArea = () => {
+  return (
+    <View style={styles.bookingContainer}>
+      <View style={styles.bookingView}>
+        <Text style={styles.priceTxt}>
+          {`$${item.price}/night`}
+        </Text>
+        <TouchableOpacity style={styles.bookingBtn}>
+          <Text style={styles.bookingBtnTxt}>
+            Request To Book
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
     container: {
