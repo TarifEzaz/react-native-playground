@@ -62,4 +62,5 @@ const styles = StyleSheet.create({
     height: 15
   }
 })
+
 export default Rating;
