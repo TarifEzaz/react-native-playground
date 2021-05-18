@@ -1,9 +1,13 @@
+import React, {useState, useEffect} from 'react';
 import { FlatList, StyleSheet } from "react-native";
-import { axios } from "axios";
+import * as axios from 'axios';
+import config from "../../../config";
+import DestinationsListItem from "./DestinationsListItem";
 
 const DestinationsList = ({ navigation }) => {
     const [destinationsItems, setDestinationsItems] = useState([])
-  
+
+    var fetchData
     useEffect(() => {
       fetchData = async() => {
         const discoverListUrl = `${config.baseUrl}/destinations`
@@ -48,3 +52,5 @@ const DestinationsList = ({ navigation }) => {
       paddingLeft:10
     }
   });
+
+  export default DestinationsList
