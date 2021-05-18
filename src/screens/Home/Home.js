@@ -11,12 +11,12 @@ From the doc: https://docs.expo.io/versions/latest/sdk/status-bar/
 */
 import React, {useState} from 'react';
 import {
-  View, 
-  Image, 
-  Text, 
-  TextInput, 
+  Image,
   StyleSheet,
-  TouchableOpacity 
+  Text, 
+  TextInput,
+  TouchableOpacity, 
+  View
 } from 'react-native';
 import DiscoverList from "./Components/DiscoverList";
 import DestinationsList from "./Components/DestinationList";
