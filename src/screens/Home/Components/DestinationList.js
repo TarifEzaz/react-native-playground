@@ -1,5 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import { FlatList, StyleSheet } from "react-native";
+import React, {
+  useState, 
+  useEffect
+} from 'react';
+import { 
+  FlatList, 
+  StyleSheet 
+} from "react-native";
 import * as axios from 'axios';
 import config from "../../../config";
 import DestinationsListItem from "./DestinationsListItem";
