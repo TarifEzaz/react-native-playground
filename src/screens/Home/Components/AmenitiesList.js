@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { 
     Image,
     StyleSheet,
     Text,
     TouchableOpacity
 } from "react-native";
+
 import config from "../../../config";
 
 const AmenitiesList = ({ item, onPress }) => {
