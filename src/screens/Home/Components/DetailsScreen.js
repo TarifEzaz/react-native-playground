@@ -8,9 +8,10 @@ import {
   View
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import config from "../../config"
-import Rating from "../Components/Rating"
-import AmenitiesList from "./Components/AmenitiesList"
+import config from "../../../config"
+import Rating from "../Components/CustomerRating"
+import AmenitiesList from "../Components/AmenitiesList"
+import BookingArea from "../Components/BookingArea";
 
 export default function App({ navigation, route}) {
   const { item } = route.params
@@ -28,7 +29,7 @@ export default function App({ navigation, route}) {
         >
           <Image 
             style={styles.drawerIc} 
-            source={require("../../../assets/arrowBack.png")} 
+            source={require("../../../../assets/arrowBack.png")} 
           />
         </TouchableOpacity>
       </View>
@@ -63,7 +64,7 @@ export default function App({ navigation, route}) {
           <AmenitiesList amenities={item.amenities}/>
         </View>   
       </ScrollView>
-      <BookingArea />
+      <BookingArea item={item}/>
       <AmenitiesList />
     </ImageBackground>
   );
