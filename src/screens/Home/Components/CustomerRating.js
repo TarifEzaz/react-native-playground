@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-    View, 
-    Image, 
-    StyleSheet 
+  Image,
+  StyleSheet,
+  View  
 } from 'react-native';
 
 const Rating = ({rating}) => {
