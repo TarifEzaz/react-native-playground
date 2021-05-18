@@ -8,6 +8,7 @@ import {
   View
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+
 import config from "../../../config"
 import Rating from "../Components/CustomerRating"
 import AmenitiesList from "../Components/AmenitiesList"
@@ -23,7 +24,9 @@ export default function App({ navigation, route}) {
       style={styles.container}
       resizeMode='cover'
     >
-      <View  style={styles.leftSpace}>
+      <View  
+        style={styles.leftSpace}
+      >
         <TouchableOpacity 
           onPress={() => navigation.goBack()} 
         >
@@ -77,7 +80,6 @@ export default function App({ navigation, route}) {
         </View>   
       </ScrollView>
       <BookingArea item={item}/>
-      <AmenitiesList />
 
     </ImageBackground>
   );
