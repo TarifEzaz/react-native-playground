@@ -1,4 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
+/*
+expo-status-bar gives you a component and imperative 
+interface to control the app status bar to change its 
+text color, background color, hide it, make it 
+translucent or opaque, and apply animations to any of 
+these changes. Exactly what you are able to do with 
+the StatusBar component depends on the platform you're 
+using.
+From the doc: https://docs.expo.io/versions/latest/sdk/status-bar/
+*/
 import React, {useState} from 'react';
 import {
   View, 
