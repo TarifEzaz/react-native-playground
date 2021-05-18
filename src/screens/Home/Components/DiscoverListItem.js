@@ -1,4 +1,8 @@
-const DisoverListItem = ({ item, onPress }) => {
+import React from 'react';
+import {TouchableOpacity, Image, StyleSheet, Text } from 'react-native';
+import config from '../../../config';
+
+const DiscoverListItem = ({ item, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.item}>
       <Image 
@@ -28,3 +32,5 @@ const styles = StyleSheet.create({
     height:42
   }
 });
+
+export default DiscoverListItem
