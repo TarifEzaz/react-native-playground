@@ -1,10 +1,14 @@
 import React, {
-  useState, useEffect
+  useState, 
+  useEffect
 } from "react";
 import * as axios from 'axios';
+/*
+There's no named export as 'axios', you have to import the whole thing.
+*/
 import {
-  SafeAreaView, 
-  FlatList, 
+  FlatList,
+  SafeAreaView,  
   StyleSheet
 } from "react-native";
 import config from '../../../config';
@@ -56,5 +60,5 @@ const DiscoverList = () => {
       marginLeft:20,
     },
   });
-  
+
   export default DiscoverList
