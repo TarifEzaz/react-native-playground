@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import config from "../config"
+import config from "../../config"
 import { useFonts, Rubik_700Bold, Rubik_400Regular, Rubik_500Medium } from '@expo-google-fonts/rubik';
-import { AppLoading } from 'expo';
 
 export default function Splash({ navigation }) {
     let [fontsLoaded] = useFonts({
@@ -12,15 +11,12 @@ export default function Splash({ navigation }) {
       Rubik_500Medium
     });
   
-    if (!fontsLoaded) {
-      return <AppLoading />;
-    }
     return (
       <View style={styles.container}>
         <StatusBar style="auto" />
         <Image 
           style={styles.Image}
-          source={require("../../assets/SplashImg.png")} 
+          source={require("../../../assets/SplashImg.png")} 
         />
         <Text style={styles.title}>Find yourself  outside.</Text>
         <Text style={styles.body}>
