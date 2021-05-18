@@ -1,6 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {
+  useState, useEffect
+} from "react";
 import * as axios from 'axios';
-import {SafeAreaView, FlatList, StyleSheet} from "react-native";
+import {
+  SafeAreaView, 
+  FlatList, 
+  StyleSheet
+} from "react-native";
 import config from '../../../config';
 import DiscoverListItem from "./DiscoverListItem";
 
@@ -20,7 +26,6 @@ const DiscoverList = () => {
         setDiscoverItems(list.data)
       }
       fetchData()
-      
     },[]);
   
     const renderItem = ( { item }) =>  {
@@ -51,4 +56,5 @@ const DiscoverList = () => {
       marginLeft:20,
     },
   });
+  
   export default DiscoverList
