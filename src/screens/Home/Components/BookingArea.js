@@ -1,11 +1,13 @@
+import React from 'react';
 import {  
     Text, 
     TouchableOpacity, 
     StyleSheet,
     View 
 } from "react-native";
+import config from "../../../config";
 
- const BookingArea = () => {
+ const BookingArea = ({item}) => {
   return (
     <View style={styles.bookingContainer}>
       <View style={styles.bookingView}>
