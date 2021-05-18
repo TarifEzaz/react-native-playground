@@ -1,9 +1,9 @@
 import React from 'react';
 import {  
-    Text, 
-    TouchableOpacity, 
-    StyleSheet,
-    View 
+  StyleSheet,
+  Text, 
+  TouchableOpacity, 
+  View 
 } from "react-native";
 import config from "../../../config";
 
