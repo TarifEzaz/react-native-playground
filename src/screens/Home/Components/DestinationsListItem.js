@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { TouchableOpacity, Text, StyleSheet, ImageBackground, View } from "react-native";
+import React from "react";
+import { 
+  ImageBackground,
+  StyleSheet,  
+  Text,
+  TouchableOpacity, 
+  View 
+} from "react-native";
 import config from "../../../config"
 import { LinearGradient } from 'expo-linear-gradient';
 import Rating from "../Components/CustomerRating";
