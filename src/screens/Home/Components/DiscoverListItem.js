@@ -1,5 +1,10 @@
 import React from 'react';
-import {TouchableOpacity, Image, StyleSheet, Text } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity, 
+} from 'react-native';
 import config from '../../../config';
 
 const DiscoverListItem = ({ item, onPress }) => {
@@ -23,9 +28,6 @@ const styles = StyleSheet.create({
     justifyContent:"center",
     alignItems:"center",
     marginRight:20
-  },
-  title: {
-
   },
   image: {
     width:42,
