@@ -9,11 +9,14 @@ import config from '../../../config';
 
 const DiscoverListItem = ({ item, onPress }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.item}>
+    <TouchableOpacity 
+      onPress={onPress} 
+      style={styles.item}
+    >
       <Image 
         source={{uri: `${config.baseUrl}/${item.ic}`}}
         style={styles.image}
-        />
+      />
       <Text style={styles.title}>{item.title}</Text>
     </TouchableOpacity>
   )
