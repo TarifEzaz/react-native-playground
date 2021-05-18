@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import React, {useState} from 'react';
 import {
   View, 
   Image, 
@@ -7,6 +8,9 @@ import {
   StyleSheet,
   TouchableOpacity 
 } from 'react-native';
+import DiscoverList from "./Components/DiscoverList";
+import DestinationsList from "./Components/DestinationList";
+import config from "../../config"
 
 export default function App({ navigation }) {
     const [searchQuery, setSearchQuery] = useState("")
