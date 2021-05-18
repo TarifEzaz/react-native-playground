@@ -1,10 +1,13 @@
-import {useState} from "react-redux";
-import {axios} from "axios";
-import {SafeAreaView, FlatList} from "react-native";
+import React, {useState, useEffect} from "react";
+import * as axios from 'axios';
+import {SafeAreaView, FlatList, StyleSheet} from "react-native";
+import config from '../../../config';
+import DiscoverListItem from "./DiscoverListItem";
 
-const DisoverList = () => {
+const DiscoverList = () => {
     const [discoverItems, setDiscoverItems] = useState([])
   
+    var fetchData
     useEffect(() => {
       fetchData = async() => {
         const destinationListUrl = `${config.baseUrl}/discover`
@@ -41,3 +44,11 @@ const DisoverList = () => {
       </SafeAreaView>
     )
   }
+
+  const styles = StyleSheet.create({
+    container: {
+      height:150,
+      marginLeft:20,
+    },
+  });
+  export default DiscoverList
